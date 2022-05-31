@@ -111,7 +111,7 @@
             background-repeat: no-repeat;
         }
 
-        .html5 > aside {
+        .html-5 > aside {
             @extend %pic-skill;
             background-image: url("https://cdn-icons-png.flaticon.com/512/732/732212.png");
         }
@@ -169,6 +169,10 @@
         > article {
             @include flexColumnMobile;
             align-items: center;
+        }
+
+        .card-img-top {
+            height: 15vh;
         }
     }
 

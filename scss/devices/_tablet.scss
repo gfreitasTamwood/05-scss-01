@@ -1,0 +1,95 @@
+@media (min-width: 600px) {
+    
+    nav {
+        display: flex;
+        justify-content: center;
+        details {
+            width: 50%;
+        }
+
+        a {
+            font-size: 24px;
+        }
+    }
+
+    .about {
+        > p {
+            font-size: 24px;
+        }
+    }
+
+    .skills {
+        row-gap: 50px;
+
+        > article {
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+            > div {
+                width: 40%;
+                height: 420px;
+            }
+        }
+
+        %pic-skill {
+            width: 10vh;
+            height: 10vh;
+        }
+
+        aside {
+            width: 10vh;
+            height: 10vh;
+        }
+    }
+
+    .education {
+        > article {
+            width: 90%;
+        }
+
+        .card-footer {
+            height: 79px;
+
+            a {
+                width: 193px;
+                height: 62px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    .projects {
+        > article {
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    }
+
+    .contact {
+        form > div:nth-child(5) {
+            align-items: center;
+        }
+
+        label,
+        [type="text"],
+        [type="email"],
+        textarea {
+            font-size: 24px;
+        }
+
+        [type="submit"] {
+            width: 50%;
+        }
+
+    }
+
+    footer {
+        i {
+            font-size: 36px;
+            color: $defaultColor;
+        }
+    }
+}
