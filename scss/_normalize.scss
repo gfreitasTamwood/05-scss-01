@@ -11,3 +11,7 @@ html {
 body {
     font-family: $fontFamily;
 }
+
+section > h2 {
+    border-bottom: 2px solid $defaultColor;
+}
