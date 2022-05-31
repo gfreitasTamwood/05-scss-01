@@ -5,23 +5,41 @@
         height: 50vh;
         background-color: $defaultColor;
         color: whitesmoke;
+
+        > article {
+            float: right;
+            width: 60%;
+        }
     }
 
     nav {
+
         > details {
-            width: 50%;
+            float: left;
+            width: 40%;
             text-align: center;
             position: relative;
 
             ul {
                 position: absolute;
-                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
                 width: 100%;
+                padding-left: 0;
             }
             
             li {
                 list-style-type: none;
                 display: flex;
+                width: 100%;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+                background-color: whitesmoke;
+                padding: 5%;
                 width: 100%;
             }
         }
