@@ -1,0 +1,144 @@
+@media (min-width: 300px) {
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 10vh;
+
+        > div {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .skills {
+        @include mobileSection(0px);
+
+        > article {
+            @include mobileSection(20px);
+            width: 80%;
+
+            & > div {
+                @include mobileSection(15px);
+                border: 1px solid gainsboro;
+                border-radius: 5px;
+                padding: 4%;
+            }
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        %pic-skill {
+            width: 15vh;
+            height: 15vh;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .html5 > aside {
+            @extend %pic-skill;
+            background-image: url("https://cdn-icons-png.flaticon.com/512/732/732212.png");
+        }
+
+        .css-3 > aside {
+            @extend %pic-skill;
+            background-image: url("https://cdn-icons-png.flaticon.com/512/732/732190.png");
+        }
+
+        .fontawesome > aside {
+            @extend %pic-skill;
+            background-image: url("https://www.drupal.org/files/project-images/font_awesome_logo.png");
+        }
+        .google-fonts > aside {
+            @extend %pic-skill;
+            background-image: url("https://cdn-icons-png.flaticon.com/512/281/281764.png");
+        }
+    
+        .github > aside {
+            @extend %pic-skill;
+            background-image: url("https://cdn-icons-png.flaticon.com/512/733/733609.png");
+        }
+    
+        .bootstrap > aside {
+            @extend %pic-skill;
+            background-image: url("https://cdn-icons-png.flaticon.com/512/5968/5968672.png");
+        }
+    
+        .scss > aside {
+            @extend %pic-skill;
+            background-image: url("https://cdn-icons-png.flaticon.com/512/5968/5968358.png");
+        }
+    }
+
+    .education {
+        @include mobileSection(0px);
+
+        > h2 {
+            border-bottom: 2px solid $defaultColor;
+        }
+
+        > article {
+            width: 70%
+        }
+
+        [alt="Tokyo University"] {
+            padding: 5%
+        }
+    }
+
+    .projects {
+        @include flexColumnMobile;
+
+        > h2 {
+            border-bottom: 2px solid $defaultColor;
+        }
+
+        > article {
+            @include flexColumnMobile;
+            align-items: center;
+        }
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        > h2 {
+            border-bottom: 2px solid $defaultColor;
+        }
+
+        > form {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        input, textarea {
+            border: 1px solid gainsboro;
+            padding: 3%;
+        }
+
+        textarea {
+            height: 30vh;
+            font-size: 20px;
+        }
+
+        [type="submit"] {
+            background-color: $defaultColor;
+            color: whitesmoke;
+            font-size: 18px;
+        }
+    }
+}
